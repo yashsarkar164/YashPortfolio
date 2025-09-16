@@ -37,7 +37,7 @@ jobs:
         env:
           NEXT_PUBLIC_TRACKING_ID: G-R02PNHWRQ9
           NEXT_PUBLIC_SERVICE_ID: service_32dxmfl
-          NEXT_PUBLIC_TEMPLATE_ID: template_c1er48m
+          NEXT_PUBLIC_TEMPLATE_ID: template_y081yq8
           NEXT_PUBLIC_USER_ID: ADee4m2BagD8eqsN
 
       - name: Exporting Bundle Files 🎪
