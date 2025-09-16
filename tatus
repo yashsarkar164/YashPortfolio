@@ -1,0 +1,140 @@
+[33mc8eb2f6[m[33m ([m[1;36mHEAD[m[33m)[m HEAD@{0}: pull origin main --rebase (pick): [ImgBot] Optimize images
+[33m23b1329[m HEAD@{1}: pull origin main --rebase (pick): Update README.md
+[33m1e55b90[m HEAD@{2}: pull origin main --rebase (pick): Update README.md
+[33m0997d06[m HEAD@{3}: pull origin main --rebase (pick): Update README.md
+[33mcd2b129[m HEAD@{4}: pull origin main --rebase (pick): Update Readme
+[33m478626f[m HEAD@{5}: pull origin main --rebase (pick): fix: depanda bot alerts
+[33md1b1237[m HEAD@{6}: pull origin main --rebase (pick): fix: bug in all-application
+[33m0d15381[m HEAD@{7}: pull origin main --rebase (pick): adds craco build
+[33mfa2aee6[m HEAD@{8}: pull origin main --rebase (pick): updates dns-packet package
+[33mca52333[m HEAD@{9}: pull origin main --rebase (pick): fixed bugs on AllApplication screen
+[33ma475b95[m HEAD@{10}: pull origin main --rebase (pick): upgrades package versions
+[33mc310d74[m HEAD@{11}: pull origin main --rebase (pick): adds sendgrid API key template
+[33m1c0969f[m HEAD@{12}: pull origin main --rebase (pick): Minor fix
+[33md46f4c4[m HEAD@{13}: pull origin main --rebase (pick): changed code . to code
+[33maadf42b[m HEAD@{14}: pull origin main --rebase (pick): Code improvement
+[33m7a54e9d[m HEAD@{15}: pull origin main --rebase (pick): Minor changes
+[33m24030e0[m HEAD@{16}: pull origin main --rebase (pick): Added code. and All Apps feature
+[33ma0c6a5d[m HEAD@{17}: pull origin main --rebase (pick): Removed unccessary lines
+[33m9c3f6b0[m HEAD@{18}: pull origin main --rebase (pick): feat(StatusCard): :sparkles: Brightness Slider actually changes brightness
+[33mc256c68[m HEAD@{19}: pull origin main --rebase (pick): fixed terminal row bug #16
+[33m4bff396[m HEAD@{20}: pull origin main --rebase (pick): fixed package severities
+[33m6ae1eb5[m HEAD@{21}: pull origin main --rebase (pick): fix Terminal commands doesn't work when having spaces in between commands
+[33m658d30d[m HEAD@{22}: pull origin main --rebase (pick): fixed vulnerabilities
+[33m698058d[m HEAD@{23}: pull origin main --rebase (pick): Minor Changes
+[33m49f51a0[m HEAD@{24}: pull origin main --rebase (pick): Added mkdir command implementation in terminal
+[33m75a6598[m HEAD@{25}: pull origin main --rebase (pick): update for meta images
+[33m806020c[m HEAD@{26}: pull origin main --rebase (pick): updated meta tags
+[33m65b2936[m HEAD@{27}: pull origin main --rebase (pick): added xss protection in terminal
+[33m0cae2b7[m HEAD@{28}: pull origin main --rebase (pick): trim terminal command before execution
+[33mfdf7fc3[m HEAD@{29}: pull origin main --rebase (pick): Update README.md
+[33mccdc6a9[m HEAD@{30}: pull origin main --rebase (pick): converted to .env
+[33m9fbd161[m HEAD@{31}: pull origin main --rebase (pick): changed tagged language to JavaScript
+[33m983cc46[m HEAD@{32}: pull origin main --rebase (pick): vscode is here
+[33ma432a0b[m HEAD@{33}: pull origin main --rebase (pick): Update README.md
+[33m2b925e9[m HEAD@{34}: pull origin main --rebase (pick): added 'exit' command in terminal
+[33m9ebe8cb[m HEAD@{35}: pull origin main --rebase (pick): added few things
+[33mfe975d4[m HEAD@{36}: pull origin main --rebase (pick): intefrated email-js
+[33mcceb205[m HEAD@{37}: pull origin main --rebase (pick): Update LICENSE
+[33md3593cf[m HEAD@{38}: pull origin main --rebase (pick): MIT LICENSE!!
+[33me18451a[m HEAD@{39}: pull origin main --rebase (pick): fixed bugs
+[33mdde0a1d[m HEAD@{40}: pull origin main --rebase (pick): added about-vivek app
+[33md8a38fa[m HEAD@{41}: pull origin main --rebase (pick): fixed full-screen bug
+[33mf76708b[m HEAD@{42}: pull origin main --rebase (pick): disabled waiting cursor
+[33m8bd5c96[m HEAD@{43}: pull origin main --rebase (pick): updated gedit
+[33m7458976[m HEAD@{44}: pull origin main --rebase (pick): added test.css to git
+[33mafd55d8[m HEAD@{45}: pull origin main --rebase (pick): refactoring
+[33m570743a[m HEAD@{46}: pull origin main --rebase (pick): added gedit
+[33mda7ebbd[m HEAD@{47}: pull origin main --rebase (pick): update terminal
+[33m3466180[m HEAD@{48}: pull origin main --rebase (pick): fixed bugs
+[33me70edb8[m HEAD@{49}: pull origin main --rebase (pick): updated google analytics
+[33m3ef989c[m HEAD@{50}: pull origin main --rebase (pick): fixed issue
+[33mfe04e92[m HEAD@{51}: pull origin main --rebase (pick): added google analytics
+[33m40f1b5f[m HEAD@{52}: pull origin main --rebase (pick): integrated gihub pages
+[33m0868bb3[m HEAD@{53}: pull origin main --rebase (pick): fixed LockScreen
+[33m837e212[m HEAD@{54}: pull origin main --rebase (pick): added homepage url
+[33meb366c4[m HEAD@{55}: pull origin main --rebase (pick): compressed images & optimised Settings
+[33m0a71b24[m HEAD@{56}: pull origin main --rebase (pick): added localStorage for new_folders
+[33mc3cb08a[m HEAD@{57}: pull origin main --rebase (pick): updated terminal
+[33m6d3e3d5[m HEAD@{58}: pull origin main --rebase (pick): deleted unnecessary images
+[33m9bb498f[m HEAD@{59}: pull origin main --rebase (pick): updated tabIndex
+[33mcda364c[m HEAD@{60}: pull origin main --rebase (pick): updated index for SEO
+[33md23432d[m HEAD@{61}: pull origin main --rebase (pick): fixed lock-screen
+[33m0c0fd22[m HEAD@{62}: pull origin main --rebase (pick): added shutDown Screen
+[33mf62b3ab[m HEAD@{63}: pull origin main --rebase (pick): optimised status_bar with tabIndex
+[33m8dfe289[m HEAD@{64}: pull origin main --rebase (pick): added localStorage for ScreenLock
+[33m714d609[m HEAD@{65}: pull origin main --rebase (pick): added ScreenLock
+[33m78eb753[m HEAD@{66}: pull origin main --rebase (pick): added localStorage for preferences
+[33m5161780[m HEAD@{67}: pull origin main --rebase (pick): added Trash app
+[33mc4fd680[m HEAD@{68}: pull origin main --rebase (pick): fixed responsiveness
+[33ma50953b[m HEAD@{69}: pull origin main --rebase (pick): added Chrome App
+[33m1c03690[m HEAD@{70}: pull origin main --rebase (pick): changes in responsiveness & default bg-Image
+[33m68de49e[m HEAD@{71}: pull origin main --rebase (pick): added default context-menu & optimised it's function
+[33m9eb720d[m HEAD@{72}: pull origin main --rebase (pick): minor changes
+[33m846850a[m HEAD@{73}: pull origin main --rebase (pick): removed file manager
+[33m4453520[m HEAD@{74}: pull origin main --rebase (pick): added desktop context-menu & Settings screen
+[33m49e2a7f[m HEAD@{75}: pull origin main --rebase (pick): added Desktop ContextMenu
+[33mf0c76f9[m HEAD@{76}: pull origin main --rebase (pick): refactoring
+[33m8c99a64[m HEAD@{77}: pull origin main --rebase (pick): terminal overflow changes
+[33m969b799[m HEAD@{78}: pull origin main --rebase (pick): added snapstore
+[33mc13a727[m HEAD@{79}: pull origin main --rebase (pick): added Todoist
+[33m7efecf3[m HEAD@{80}: pull origin main --rebase (pick): added msteams
+[33m454978d[m HEAD@{81}: pull origin main --rebase (pick): added Terminal & Spotify
+[33m20b6242[m HEAD@{82}: pull origin main --rebase (pick): added desktop_shortcut property
+[33m00f55af[m HEAD@{83}: pull origin main --rebase (pick): added app's screens
+[33m8bc7491[m HEAD@{84}: pull origin main --rebase (pick): small changes
+[33mf87d30b[m HEAD@{85}: pull origin main --rebase (pick): added some apps
+[33m0936f43[m HEAD@{86}: pull origin main --rebase (pick): on edge hover show SideBar
+[33m7f19a21[m HEAD@{87}: pull origin main --rebase (pick): added maximise button
+[33m2eb170c[m HEAD@{88}: pull origin main --rebase (pick): converted class components to functional
+[33m810e73a[m HEAD@{89}: pull origin main --rebase (pick): added minimise button
+[33m0afe5db[m HEAD@{90}: pull origin main --rebase (pick): removed RegisterApp.js
+[33mcc37f30[m HEAD@{91}: pull origin main --rebase (pick): fixed sidebar hide bug
+[33m80f07f5[m HEAD@{92}: pull origin main --rebase (pick): onClick scale image
+[33m3c43099[m HEAD@{93}: pull origin main --rebase (pick): on window overlapp hide SideBar
+[33m713a95c[m HEAD@{94}: pull origin main --rebase (pick): added all app button
+[33m170b240[m HEAD@{95}: pull origin main --rebase (pick): fixed onClose remove from sidebar
+[33m2677ebd[m HEAD@{96}: pull origin main --rebase (pick): added favourites prop to apps
+[33ma34f315[m HEAD@{97}: pull origin main --rebase (pick): fixed onDrag focus
+[33m7739d69[m HEAD@{98}: pull origin main --rebase (pick): focus to last opened window onClose
+[33m8580379[m HEAD@{99}: pull origin main --rebase (pick): fixed disabled window's bug
+[33m05d2202[m HEAD@{100}: pull origin main --rebase (pick): added separet window's area
+[33m7e98c6c[m HEAD@{101}: pull origin main --rebase (pick): added one stop for all apps
+[33m09059e3[m HEAD@{102}: pull origin main --rebase (pick): small changes
+[33m5140ced[m HEAD@{103}: pull origin main --rebase (pick): added window opening delay
+[33me7bb7d6[m HEAD@{104}: pull origin main --rebase (pick): added desktop side bar
+[33md8908f0[m HEAD@{105}: pull origin main --rebase (pick): changed Window's shadow
+[33m527bb65[m HEAD@{106}: pull origin main --rebase (pick): added more apps
+[33m732ccee[m HEAD@{107}: pull origin main --rebase (pick): added UbuntuApp icons
+[33m361502c[m HEAD@{108}: pull origin main --rebase (pick): added UbuntuApp & RegisterApp Component
+[33m7922115[m HEAD@{109}: pull origin main --rebase (pick): changed default closing position
+[33mf5cf868[m HEAD@{110}: pull origin main --rebase (pick): updated focused window's style
+[33m6cd043a[m HEAD@{111}: pull origin main --rebase (pick): added responsiveness to window
+[33m81acfd7[m HEAD@{112}: pull origin main --rebase (pick): increased closing speed
+[33m5c7a7b1[m HEAD@{113}: pull origin main --rebase (pick): disabled maxiize function
+[33m5961f7b[m HEAD@{114}: pull origin main --rebase (pick): added custom classes for Window
+[33m9d4dcd7[m HEAD@{115}: pull origin main --rebase (pick): added maximize & minimize function
+[33m9f4d28f[m HEAD@{116}: pull origin main --rebase (pick): Added onClick window's focus
+[33mf3ef57c[m HEAD@{117}: pull origin main --rebase (pick): Added Window Object
+[33m6bc9fa9[m HEAD@{118}: pull origin main --rebase (pick): added min-height values
+[33m0d96491[m HEAD@{119}: pull origin main --rebase (pick): fixed border
+[33ma59fd36[m HEAD@{120}: pull origin main --rebase (pick): registered window-title-color
+[33mb045d36[m HEAD@{121}: pull origin main --rebase (pick): changed config
+[33mf528526[m HEAD@{122}: pull origin main --rebase (pick): updated status card
+[33mca7db64[m HEAD@{123}: pull origin main --rebase (pick): added background iamge
+[33m540c619[m HEAD@{124}: pull origin main --rebase (pick): fixed clock
+[33md689af2[m HEAD@{125}: pull origin main --rebase (pick): changed formatting
+[33m4f24d0f[m HEAD@{126}: pull origin main --rebase (pick): added theme-Yaru
+[33m3d2c158[m HEAD@{127}: pull origin main --rebase (pick): Added test.css
+[33mf0601c1[m HEAD@{128}: pull origin main --rebase (pick): Added Status Card
+[33m33e6c31[m HEAD@{129}: pull origin main --rebase (pick): Added NavBar
+[33mf3c082e[m HEAD@{130}: pull origin main --rebase (pick): configured tailwind
+[33m04a9263[m HEAD@{131}: pull origin main --rebase (pick): configured tailwind-css
+[33m0246551[m HEAD@{132}: pull origin main --rebase (pick): Initialize project using Create React App
+[33m7c07e5c[m HEAD@{133}: pull origin main --rebase (pick): first commit
+[33m66db36f[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{134}: pull origin main --rebase (start): checkout 66db36f06fe5f97de52b2cb0bad98e5274884f9d
+[33mc9e9eee[m[33m ([m[1;32mmain[m[33m)[m HEAD@{135}: commit (merge): Resolved merge conflict in FUNDING.yml
+[33m2c98199[m HEAD@{136}: commit: Initial commit for my portfolio
+[33mc4f1eff[m HEAD@{137}: Branch: renamed refs/heads/main to refs/heads/main
+[33mc4f1eff[m HEAD@{139}: Branch: renamed refs/heads/master to refs/heads/main
+[33mc4f1eff[m HEAD@{141}: clone: from https://github.com/vivek9patel/vivek9patel.github.io.git
