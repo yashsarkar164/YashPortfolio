@@ -6,32 +6,29 @@ export class Trash extends Component {
         super();
         this.trashItems = [
             {
-                name: "php",
-                icon: "./themes/filetypes/php.png"
-            },
-            {
-                name: "Angular.js",
-                icon: "./themes/filetypes/js.png"
-            },
-            {
-                name: "node_modules",
-                icon: "./themes/Yaru/system/folder.png"
+                name: "Google offer_letter.pdf",
+                icon: "./themes/filetypes/pdf.png"
             },
 
             {
-                name: "abandoned project",
-                icon: "./themes/Yaru/system/folder.png"
-            },
-            {
-                name: "18BCP127 assignment name.zip",
+                name: "love.zip",
                 icon: "./themes/filetypes/zip.png"
             },
             {
-                name: "project final",
-                icon: "./themes/Yaru/system/folder.png"
+                name: "password.txt",
+                icon: "./themes/filetypes/txt.png"
             },
             {
-                name: "project ultra-final",
+                name: "VALORANT",
+                icon: "./themes/filetypes/valo.webp"
+            },
+            {
+                name: "mrRobot.ova",
+                icon: "./themes/filetypes/mrRobot.png"
+            },
+            
+            {
+                name: "project final",
                 icon: "./themes/Yaru/system/folder.png"
             },
 

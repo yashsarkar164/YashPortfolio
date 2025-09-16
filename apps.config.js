@@ -5,7 +5,7 @@ import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
 import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
-import { displayAboutVivek } from './components/apps/vivek';
+import { displayAboutYash } from './components/apps/yash';
 import { displayTerminalCalc } from './components/apps/calc';
 
 const apps = [
@@ -28,13 +28,13 @@ const apps = [
         screen: displayTerminalCalc,
     },
     {
-        id: "about-vivek",
-        title: "About Vivek",
+        id: "about-yash",
+        title: "About Yash",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
-        screen: displayAboutVivek,
+        screen: displayAboutYash,
     },
     {
         id: "vscode",
@@ -98,19 +98,20 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/vivek9patel",
+        url: "https://github.com/yashsarkar164",
         screen: () => {},
     },
     {
-        id: "tars",
-        title: "Ask Tars",
-        icon: './themes/Yaru/apps/tars.svg',
-        disabled: false,
-        favourite: false,
-        desktop_shortcut: true,
-        isExternalApp: true,
-        url: "https://www.vivek9patel.com/tars"
-    },
+    id: "instagram",
+    title: "Instagram",
+    icon: './themes/Yaru/apps/instagram.png', 
+    disabled: false,
+    favourite: false,
+    desktop_shortcut: true,
+    isExternalApp: true,
+    url: "https://www.instagram.com/yash.sarkar__/", 
+},
+
 ]
 
 export default apps;

@@ -45,9 +45,10 @@ export class Gedit extends Component {
         const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
         const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
         const templateParams = {
-            'name': name,
-            'subject': subject,
-            'message': message,
+            from_name: name,      
+            from_email: name,     
+            subject: subject,
+            message: message,
         }
 
         emailjs.send(serviceID, templateID, templateParams).then(() => {
