@@ -2,7 +2,7 @@
   "name": "yash-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://vivek9patel.github.io/",
+  "homepage": "https://yashsarkar164.github.io/YashPortfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
