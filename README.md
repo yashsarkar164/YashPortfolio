@@ -2,7 +2,7 @@
 
 Welcome to my interactive **portfolio website** built to simulate the **Ubuntu 20.04 Desktop**. This is a **Next.js + TailwindCSS** project where you can explore apps, wallpapers, and menus just like a real Ubuntu OS, but right inside your browser.
 
-**Live Demo**: [yashsarkar-portfolio.vercel.app](https://yashsarkar-portfolio.vercel.app/)
+**Live Demo**: [CLICK HERE](https://yashsarkar-portfolio.vercel.app/)
 
 ---
 
@@ -24,7 +24,7 @@ To run this project locally, follow these steps.
 ### Clone the repository:
 
 ```bash
-git clone [https://github.com/yashsarkar164/YashPortfolio.git](https://github.com/yashsarkar164/YashPortfolio.git)
+git clone https://github.com/yashsarkar164/YashPortfolio.git
 cd YashPortfolio
 ````
 
@@ -55,15 +55,16 @@ npm run export
 
 All static files will be generated in the `out/` folder.
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The workflow file is `.github/workflows/gh-deploy.yml`, and the deployment branch is `gh-pages`.
+This project is automatically deployed to GitHub Pages using GitHub Actions. 
+The workflow file is `.github/workflows/gh-deploy.yml`, and the deployment branch is `gh-pages`.
 
 -----
 
 ## Contact Form Setup
 
-This project uses [EmailJS](https://www.emailjs.com/) for handling contact forms.
+This project uses EmailJS for handling contact forms.
 
-1.  **Create an account** on EmailJS.
+1.  **Create an account** on [EmailJS](https://www.emailjs.com/).
 2.  **Add a new service** (Gmail or Outlook is recommended).
 3.  **Copy** your Service ID, Template ID, and User ID.
 4.  **Add them to a `.env.local` file** at the root of your project:
@@ -71,9 +72,9 @@ This project uses [EmailJS](https://www.emailjs.com/) for handling contact forms
 <!-- end list -->
 
 ```bash
-NEXT_PUBLIC_USER_ID=your_user_id
-NEXT_PUBLIC_TEMPLATE_ID=your_template_id
-NEXT_PUBLIC_SERVICE_ID=your_service_id
+NEXT_PUBLIC_USER_ID= 'your_user_id'
+NEXT_PUBLIC_TEMPLATE_ID= 'template_fqqqb9g'
+NEXT_PUBLIC_SERVICE_ID= 'your_service_id'
 ```
 
 -----
@@ -82,7 +83,7 @@ NEXT_PUBLIC_SERVICE_ID=your_service_id
 
 ### Desktop Screenshot
 
-\<img src="public/themes/Yaru/Screenshots/desktop.png" alt="Desktop Screenshot" /\>
+<img src="public/themes/Yaru/Screenshots/desktop.png" alt="Desktop Screenshot" />
 
 -----
 
@@ -102,7 +103,7 @@ Contributions are always welcome\! If you'd like to add new features or improve 
 
 If you like this project, you can support me here:
 
-\<a href="https://buymeacoffee.com/yashsarkar" target="\_blank"\>\<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px \!important;width: 140px \!important;" \>\</a\>
+<a href="https://buymeacoffee.com/yashsarkar" target="\_blank"\><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 
 ```
 ```
