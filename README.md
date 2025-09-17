@@ -57,7 +57,7 @@ npm run export
 All static files will be generated in the `out/` folder.
 
 This project is automatically deployed to GitHub Pages using GitHub Actions. 
-The workflow file is `.github/workflows/gh-deploy.yml`, and the deployment branch is `gh-pages`.
+The workflow file is `.github/workflows/gh-deploy.yml`.
 
 -----
 
