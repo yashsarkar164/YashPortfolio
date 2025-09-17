@@ -103,7 +103,7 @@ Contributions are always welcome\! If you'd like to add new features or improve 
 
 If you like this project, you can support me here:
 
-<a href="https://buymeacoffee.com/yashsarkar" target="\_blank"\><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+<a href="https://buymeacoffee.com/yashsarkar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 
 ```
 ```
