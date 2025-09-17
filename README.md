@@ -18,7 +18,7 @@ Welcome to my interactive **portfolio website** built to simulate the **Ubuntu 2
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project locally, follow these steps.
 
@@ -45,7 +45,7 @@ The site will now be running at `http://localhost:3000`.
 
 -----
 
-## 🛠️ Build & Deployment
+##  Build & Deployment
 
 ### Build production files:
 
@@ -106,8 +106,3 @@ If you like this project, you can support me here:
 
 <a href="https://buymeacoffee.com/yashsarkar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 
-
-
-
-```
-```
