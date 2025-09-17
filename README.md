@@ -4,6 +4,7 @@ Welcome to my interactive **portfolio website** built to simulate the **Ubuntu 2
 
 **Live Demo**: [CLICK HERE](https://yashsarkar-portfolio.vercel.app/)
 
+<a href="https://buymeacoffee.com/yashsarkar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 ---
 
 ## Features
@@ -105,7 +106,7 @@ If you like this project, you can support me here:
 
 <a href="https://buymeacoffee.com/yashsarkar" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 
-[Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/yashsarkar)
+
 
 
 ```
