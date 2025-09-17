@@ -1,4 +1,4 @@
-# Ubuntu OS Simulation - Portfolio
+# Ubuntu Simulation - Portfolio
 
 Welcome to my interactive **portfolio website** built to simulate the **Ubuntu 20.04 Desktop**. This is a **Next.js + TailwindCSS** project where you can explore apps, wallpapers, and menus just like a real Ubuntu OS, but right inside your browser.
 
