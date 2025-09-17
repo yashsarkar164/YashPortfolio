@@ -70,17 +70,8 @@ NEXT_PUBLIC_SERVICE_ID=your_service_id
 # OVERVIEW
 
 ##  Desktop
-<img src="public/themes/Yaru/Screenshots/desktop.png" width="60" />
+<img src="public/themes/Yaru/Screenshots/desktop.png" />
 
-##  Terminal
-<img src="public/themes/Yaru/Screenshots/terminal.png" width="60" />
-Gotcha, SUDO huh! No permission to `sudo rm -rf` 
-
-##  Visual Studio Code
-<img src="public/themes/Yaru/Screenshots/code.png" width="60" />
-
-##  Spotify
-<img src="public/themes/Yaru/Screenshots/spotify.png" width="60" />
 
 ## Contributing
 
