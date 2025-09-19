@@ -151,17 +151,18 @@ function Education() {
                 </li>
                 <li className="list-disc">
                     <div className=" text-lg md:text-xl mt-4 text-left font-bold leading-tight">
-                        Class 12<sup>th</sup>
+                        STAR PUBLIC SCHOOL
                     </div>
                     <div className=" text-sm text-gray-400 mt-0.5">2023</div>
-                    <div className=" text-sm md:text-base">PCM</div>
+                    <div className=" text-sm md:text-base">Class 12<sup>th</sup> PCM</div>
                     <div className="text-sm text-gray-300 font-bold mt-1">Percentage &nbsp; 87%</div>
                 </li>
                 <li className="list-disc mt-5">
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        Class 10<sup>th</sup>
+                        STAR PUBLIC SCHOOL
                     </div>
                     <div className=" text-sm text-gray-400 mt-0.5">2021</div>
+                    <div className=" text-sm md:text-base">Class 10<sup>th</sup></div>
                     <div className="text-sm text-gray-300 font-bold mt-1">Percentage &nbsp; 86.3%</div>
                 </li>
             </ul>
