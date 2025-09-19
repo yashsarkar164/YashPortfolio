@@ -114,7 +114,7 @@ const apps = [
 
     {
         id: "linkedin",
-        title: "Telegram",
+        title: "LinkedIn",
         icon: './themes/Yaru/apps/linkedin.png',
         disabled: false,
         favourite: false,
