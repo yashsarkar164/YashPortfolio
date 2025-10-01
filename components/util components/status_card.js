@@ -95,7 +95,7 @@ export class StatusCard extends Component {
 						<img width="16px" height="16px" src="./themes/Yaru/status/network-wireless-signal-good-symbolic.svg" alt="ubuntu wifi" />
 					</div>
 					<div className="w-2/3 flex items-center justify-between text-gray-400">
-						<span>OnePlus 8 Pro</span>
+						<span>IPhone 69 Pro</span>
 						<SmallArrow angle="right" />
 					</div>
 				</div>
@@ -113,7 +113,7 @@ export class StatusCard extends Component {
 						<img width="16px" height="16px" src="./themes/Yaru/status/battery-good-symbolic.svg" alt="ubuntu battery" />
 					</div>
 					<div className="w-2/3 flex items-center justify-between text-gray-400">
-						<span>2:40 Remaining (75%)</span>
+						<span>1:43 Remaining (75%)</span>
 						<SmallArrow angle="right" />
 					</div>
 				</div>
