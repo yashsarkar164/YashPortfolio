@@ -31,9 +31,9 @@ jobs:
       - name: Building 🧱
         run: yarn build
         env:
-          NEXT_PUBLIC_SERVICE_ID: service_nnq3lci
-          NEXT_PUBLIC_TEMPLATE_ID: template_cigfnj7
-          NEXT_PUBLIC_USER_ID: ADee4m2BagD8eqsN-
+          NEXT_PUBLIC_SERVICE_ID: service_stplqpi
+          NEXT_PUBLIC_TEMPLATE_ID: template_6ozzu0x
+          NEXT_PUBLIC_USER_ID: p7Qe6pO4O4F5g4MHJ
 
       - run: touch ./out/.nojekyll
 
