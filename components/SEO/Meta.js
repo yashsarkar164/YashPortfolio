@@ -5,7 +5,7 @@ export default function Meta() {
     return (
         <Head>
 
-            <title>Yash's Portfolio</title>
+            <title>Yubuntu</title>
             <meta charSet="utf-8" />
             <meta name="title" content="Yash's Portfolio - Computer Engineering Student" />
             <meta name="description"
