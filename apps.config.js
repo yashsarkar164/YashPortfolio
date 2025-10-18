@@ -7,6 +7,8 @@ import { displayTrash } from './components/apps/trash';
 import { displayGedit } from './components/apps/gedit';
 import { displayAboutYash } from './components/apps/yash';
 import { displayTerminalCalc } from './components/apps/calc';
+import SnakeGame from "./components/apps/snake";
+
 
 const apps = [
     {
@@ -61,7 +63,7 @@ const apps = [
         disabled: false,
         favourite: true,
         desktop_shortcut: false,
-        screen: displaySpotify, // India Top 50 Playlist 😅
+        screen: displaySpotify,
     },
     {
         id: "settings",
@@ -122,6 +124,19 @@ const apps = [
         isExternalApp: true,
         url: "https://www.linkedin.com/in/yasarkar99/",
     },
+    
+
+{
+  id: "snake",
+  title: "Snake",
+  icon: "/themes/Yaru/apps/snake.png",
+  disabled: false,
+  favourite: true,
+  desktop_shortcut: true,
+  screen: () => <SnakeGame />
+}
+
+
 ]
 
 export default apps;
