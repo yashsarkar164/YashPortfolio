@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import $ from 'jquery';
 import ReactGA from 'react-ga4';
 import emailjs from '@emailjs/browser';
+import { Send, XCircle, Mail, User, MessageSquare } from 'lucide-react';
 
 export class Gedit extends Component {
 
@@ -9,6 +11,8 @@ export class Gedit extends Component {
         super();
         this.state = {
             sending: false,
+            sent: false,
+            error: false
         }
     }
 
@@ -17,94 +21,153 @@ export class Gedit extends Component {
     }
 
     sendMessage = async () => {
-        let name = $("#sender-name").val();
-        let subject = $("#sender-subject").val();
-        let message = $("#sender-message").val();
-
-        name = name.trim();
-        subject = subject.trim();
-        message = message.trim();
+        let name = $("#sender-name").val().trim();
+        let subject = $("#sender-subject").val().trim();
+        let message = $("#sender-message").val().trim();
 
         let error = false;
 
-        if (name.length === 0) {
+        if (!name) {
             $("#sender-name").val('');
             $("#sender-name").attr("placeholder", "Name must not be Empty!");
             error = true;
         }
 
-        if (message.length === 0) {
+        if (!message) {
             $("#sender-message").val('');
             $("#sender-message").attr("placeholder", "Message must not be Empty!");
             error = true;
         }
         if (error) return;
 
-        this.setState({ sending: true });
+        this.setState({ sending: true, sent: false, error: false });
 
         const serviceID = "service_stplqpi";
         const templateID = "template_6ozzu0x";
-        const templateParams = {
-            'name': name,
-            'subject': subject,
-            'message': message,
-        }
+        const templateParams = { name, subject, message };
 
-        emailjs.send(serviceID, templateID, templateParams).then(() => {
-            this.setState({ sending: false });
-            $("#close-gedit").trigger("click");
-        }).catch(() => {
-            this.setState({ sending: false });
-            $("#close-gedit").trigger("click");
-        })
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(() => {
+                this.setState({ sending: false, sent: true });
+                setTimeout(() => $("#close-gedit").trigger("click"), 2000);
+            })
+            .catch(() => {
+                this.setState({ sending: false, error: true });
+            });
 
         ReactGA.event({
             category: "Send Message",
             action: `${name}, ${subject}, ${message}`
         });
-
     }
 
     render() {
         return (
-            <div className="w-full h-full relative flex flex-col bg-ub-cool-grey text-white select-none">
-                <div className="flex items-center justify-between w-full bg-ub-gedit-light bg-opacity-60 border-b border-t border-blue-400 text-sm">
-                    <span className="font-bold ml-2">Send a Message to Me</span>
-                    <div className="flex">
-                        <div onClick={this.sendMessage} className="border border-black bg-black bg-opacity-50 px-3 py-0.5 my-1 mx-1 rounded hover:bg-opacity-80">Send</div>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 30 }}
+                transition={{ duration: 0.4 }}
+                className="relative flex flex-col bg-gradient-to-br from-[#2b0d5b] via-[#1e1b5a] to-[#09021e] text-white rounded-lg overflow-hidden shadow-[0_0_30px_rgba(118,87,255,0.4)] border border-gray-700"
+            >
+                {/* Header */}
+                <div className="flex items-center justify-between px-3 py-2 bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-600 text-sm font-medium tracking-wide shadow-lg">
+                    <span className="flex items-center gap-2">
+                        <Mail className="w-4 h-4" />
+                        Contact Me
+                    </span>
+                    <div className="flex items-center gap-2">
+                        <motion.button
+                            onClick={this.sendMessage}
+                            whileTap={{ scale: 0.9 }}
+                            whileHover={{ scale: 1.05 }}
+                            className="flex items-center gap-1 bg-black/40 hover:bg-black/60 border border-gray-600 px-3 py-1 rounded-lg text-sm transition-all"
+                        >
+                            <Send className="w-3.5 h-3.5" /> Send
+                        </motion.button>
+                        <button id="close-gedit" className="p-1 hover:bg-black/30 rounded-full transition">
+                            <XCircle className="w-4 h-4 text-red-400" />
+                        </button>
                     </div>
                 </div>
-                <div className="relative flex-grow flex flex-col bg-ub-gedit-dark font-normal windowMainScreen">
-                    <div className="absolute left-0 top-0 h-full px-2 bg-ub-gedit-darker"></div>
+
+                {/* Main Form */}
+                <div className="flex flex-col flex-grow p-4 space-y-3 font-light bg-gradient-to-br from-[#2d004d] via-[#0a0520] to-[#000000] backdrop-blur-sm">
                     <div className="relative">
-                        <input id="sender-name" className=" w-full text-ubt-gedit-orange focus:bg-ub-gedit-light outline-none font-medium text-sm pl-6 py-0.5 bg-transparent" placeholder="Your Email / Name :" spellCheck="false" autoComplete="off" type="text" />
-                        <span className="absolute left-1 top-1/2 transform -translate-y-1/2 font-bold light text-sm text-ubt-gedit-blue">1</span>
+                        <User className="absolute left-1 top-1/2 transform -translate-y-1/2 w-4 h-4 text-indigo-400" />
+                        <input
+                            id="sender-name"
+                            placeholder="Your Name"
+                            className="w-full pl-7 pr-2 py-1.5 bg-transparent border-b border-gray-600 focus:border-indigo-400 focus:outline-none text-sm transition-all"
+                        />
                     </div>
+
                     <div className="relative">
-                        <input id="sender-subject" className=" w-full my-1 text-ubt-gedit-blue focus:bg-ub-gedit-light gedit-subject outline-none text-sm font-normal pl-6 py-0.5 bg-transparent" placeholder="subject (may be a feedback for this website!)" spellCheck="false" autoComplete="off" type="text" />
-                        <span className="absolute left-1 top-1/2 transform -translate-y-1/2 font-bold  text-sm text-ubt-gedit-blue">2</span>
+                        <Mail className="absolute left-1 top-1/2 transform -translate-y-1/2 w-4 h-4 text-indigo-400" />
+                        <input
+                            id="sender-subject"
+                            placeholder="Subject (feedback, lil chat, etc.)"
+                            className="w-full pl-7 pr-2 py-1.5 bg-transparent border-b border-gray-600 focus:border-indigo-400 focus:outline-none text-sm transition-all"
+                        />
                     </div>
+
                     <div className="relative flex-grow">
-                        <textarea id="sender-message" className=" w-full gedit-message font-light text-sm resize-none h-full windowMainScreen outline-none tracking-wider pl-6 py-1 bg-transparent" placeholder="Message" spellCheck="false" autoComplete="none" type="text" />
-                        <span className="absolute left-1 top-1 font-bold  text-sm text-ubt-gedit-blue">3</span>
+                        <MessageSquare className="absolute left-1 top-2 w-4 h-4 text-indigo-400" />
+                        <textarea
+                            id="sender-message"
+                            placeholder="Write your message...(im waiting...)"
+                            className="w-full h-36 pl-7 pr-2 py-2 bg-transparent border border-gray-600 rounded-lg focus:border-indigo-400 focus:outline-none resize-none text-sm tracking-wide transition-all"
+                        />
                     </div>
                 </div>
-                {
-                    (this.state.sending
-                        ?
-                        <div className="flex justify-center items-center animate-pulse h-full w-full bg-gray-400 bg-opacity-30 absolute top-0 left-0">
-                            <img className={" w-8 absolute animate-spin"} src="./themes/Yaru/status/process-working-symbolic.svg" alt="Ubuntu Process Symbol" />
-                        </div>
-                        : null
-                    )
-                }
-            </div>
-        )
+
+                {/* Status Overlay */}
+                <AnimatePresence>
+                    {this.state.sending && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 backdrop-blur-md text-sm"
+                        >
+                            <motion.img
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 360 }}
+                                transition={{ repeat: Infinity, duration: 1.2, ease: "linear" }}
+                                src="./themes/Yaru/status/process-working-symbolic.svg"
+                                className="w-8 mb-2"
+                                alt="Sending..."
+                            />
+                            <span className="animate-pulse">Sending message...</span>
+                        </motion.div>
+                    )}
+
+                    {this.state.sent && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="absolute inset-0 flex flex-col items-center justify-center bg-green-900/40 text-green-200 font-medium backdrop-blur-md"
+                        >
+                            Message Sent Successfully!
+                        </motion.div>
+                    )}
+
+                    {this.state.error && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="absolute inset-0 flex flex-col items-center justify-center bg-red-900/40 text-red-200 font-medium backdrop-blur-md"
+                        >
+                            Something went wrong! Try again.
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </motion.div>
+        );
     }
 }
 
 export default Gedit;
-
-export const displayGedit = () => {
-    return <Gedit> </Gedit>;
-}
+export const displayGedit = () => <Gedit />;

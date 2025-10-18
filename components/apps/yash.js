@@ -120,26 +120,104 @@ export const displayAboutYash = () => {
 function About() {
   return (
     <>
-      <div className="w-20 md:w-28 my-4 bg-white rounded-full">
-        <img className="w-full" src="./images/logos/bitmoji.png" alt="Yash Sarkar Logo" />
+      {/* Bitmoji Section */}
+      <div className="relative flex justify-center items-center my-6 md:my-10">
+        <div className="relative group">
+          <div className="absolute -inset-2 bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 rounded-full blur opacity-40 group-hover:opacity-70 transition-all duration-500"></div>
+          <div className="relative w-24 md:w-32 rounded-full overflow-hidden border border-white/10 shadow-lg shadow-black/30 hover:scale-105 transition-transform duration-500 ease-out">
+            <img
+              className="w-full"
+              src="./images/logos/bitmoji.png"
+              alt="Yash Sarkar Logo"
+            />
+          </div>
+        </div>
       </div>
-      <div className=" mt-4 md:mt-8 text-lg md:text-2xl text-center px-1">
-        <div>my name is <span className="font-bold">Yash Sarkar</span> ,</div>
-        <div className="font-normal ml-1">I'm a <span className="text-pink-600 font-bold">Computer Science Student!</span></div>
+
+      {/* Intro Text */}
+      <div className="mt-4 md:mt-6 text-lg md:text-2xl text-center leading-snug tracking-tight">
+        <div>
+          my name is{" "}
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-300">
+            Yash Sarkar
+          </span>
+        </div>
+        <div className="font-normal mt-1">
+          I'm a{" "}
+          <span className="text-pink-500 font-semibold">
+            Computer Science Student
+          </span>{" "}
+          & Cyber Security Enthusiast.
+        </div>
       </div>
-      <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
+
+      {/* Divider */}
+      <div className="mt-6 md:my-10 relative pt-px bg-gradient-to-r from-pink-400 via-white to-blue-400 w-36 md:w-56 mx-auto rounded-full">
         <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
         <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
       </div>
-      <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-        <li className=" list-pc">I'm a <span className=" font-medium">Btech Student</span> currently pursuing Computer Science. I've completed my 3 months internship as a Cyber Security Intern, and now I'm looking for full-time cyber security roles!  ( Hit me up <a className='text-underline' href='mailto:yashsarkar165@gmail.com'><u>@yashsarkar165@gmail.com</u></a> :) )</li>
-        <li className=" mt-3 list-building">Also I enjoy building awesome websites/softwares . </li>
-        <li className=" mt-3 list-time"> When I am not coding my next project/solving machines, I like to spend my time reading books, playing third-person video games or watching <a href="https://www.youtube.com/@Sidemen" target="_blank" rel="noreferrer" className="text-blue-500">Sidemen</a> videos.</li>
-        <li className=" mt-3 list-star">  I'm also interested in learning about AI, Networking, and exploring cool open-source tools.</li>
-      </ul>
+
+      {/* Description Box */}
+      <div className="relative mt-6 md:mt-10 w-11/12 md:w-3/4 mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5 md:p-8 shadow-lg shadow-black/10 hover:shadow-white/10 transition-all duration-500 ease-out hover:scale-[1.02]">
+        <ul className="leading-relaxed tracking-tight text-sm md:text-base text-gray-200 space-y-5">
+          <li>
+            <span className="text-pink-400">💻</span>{" "}
+            I'm a <span className="font-medium">B.Tech student</span> in{" "}
+            <span className="text-blue-400 font-semibold">
+              Computer Science
+            </span>
+            . I’ve completed a{" "}
+            <span className="text-blue-400 font-semibold">
+              3-month Cyber Security Internship
+            </span>{" "}
+            and am now exploring full-time cyber security roles.
+            <br />
+            (Reach me at{" "}
+            <a
+              className="text-orange-400 hover:text-pink-300 underline transition-colors"
+              href="mailto:yashsarkar165@gmail.com"
+            >
+              yashsarkar165@gmail.com
+            </a>
+            )
+          </li>
+
+          <li>
+            <span className="text-orange-400">⚙️</span>{" "}
+            I love{" "}
+            <span className="font-semibold">building websites</span> and tools
+            that solve real-world problems.
+          </li>
+
+          <li>
+            <span className="text-blue-400">🎮</span>{" "}
+            When I'm not coding or solving machines, you’ll find me reading,
+            playing third-person games, or watching{" "}
+            <a
+              href="https://www.youtube.com/@Sidemen"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+            >
+              Sidemen
+            </a>{" "}
+            videos.
+          </li>
+
+          <li>
+            <span className="text-purple-400">🚀</span>{" "}
+            I'm also deeply interested in learning about{" "}
+            <span className="text-pink-400 font-medium">AI</span>,{" "}
+            <span className="text-blue-300 font-medium">Networking</span>, and
+            exploring cool open-source tools. 
+          </li>
+        </ul>
+      </div>
     </>
-  )
+  );
 }
+
+
 function Education() {
   const education_list = [
     {
@@ -180,27 +258,27 @@ function Education() {
 
       <div className="relative flex flex-col items-start w-full px-4">
         {/* Vertical Timeline */}
-        <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-700 opacity-50"></div>
+        <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-400/80 via-gray-600/60 to-transparent opacity-70"></div>
 
         {education_list.map((edu, index) => (
           <div
             key={index}
             className="relative flex items-start gap-4 mb-6 md:mb-8 w-full group"
           >
-            {/* Timeline Dot */}
-            <div className="absolute left-5 mt-2.5 w-3 h-3 bg-orange-400 rounded-full group-hover:scale-125 transition-all duration-300 shadow-md"></div>
+            {/* Timeline Dot with Pulse */}
+            <div className="absolute left-5 mt-2.5 w-3 h-3 bg-orange-400 rounded-full shadow-[0_0_12px_rgba(255,165,0,0.7)] group-hover:scale-125 transition-all duration-300 animate-pulse"></div>
 
             {/* Card */}
-            <div className="ml-10 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center bg-white/5 backdrop-blur-sm border border-white/10 p-4 md:p-5 rounded-2xl w-full hover:bg-white/10 hover:border-white/20 transition-all duration-300 shadow-lg shadow-black/5">
+            <div className="ml-10 relative overflow-hidden flex flex-col md:flex-row items-start md:items-center bg-white/5 backdrop-blur-md border border-white/10 p-4 md:p-5 rounded-2xl w-full hover:scale-[1.03] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all duration-500 ease-out shadow-lg shadow-black/10">
 
               {/* Faint Background Image */}
               <div
-                className="absolute inset-0 opacity-10 group-hover:opacity-15 transition-all duration-300"
+                className="absolute inset-0 opacity-[0.08] group-hover:opacity-[0.22] transition-all duration-700 rounded-2xl"
                 style={{
                   backgroundImage: `url(${edu.bg})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  filter: "brightness(0.8) blur(1px)"
+                  filter: "brightness(0.85) blur(1px)"
                 }}
               ></div>
 
@@ -209,10 +287,10 @@ function Education() {
                 <img
                   src={edu.logo}
                   alt={edu.college}
-                  className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-md bg-white/10 p-1"
+                  className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-md bg-white/10 p-1 shadow-inner"
                 />
                 <div className="md:ml-4 mt-2 md:mt-0">
-                  <div className="text-lg md:text-xl font-semibold text-white">
+                  <div className="text-lg md:text-xl font-semibold text-white group-hover:text-orange-300 transition-all duration-300">
                     {edu.college}
                   </div>
                   <div className="text-sm text-gray-300 font-medium">
@@ -231,6 +309,7 @@ function Education() {
     </>
   );
 }
+
 
 
 function Skills() {
@@ -360,23 +439,26 @@ function Experience() {
       duration: "Jul 2025 – Sep 2025 · 3 mos",
       location: "India · Remote",
       skills: "CTF, Metasploit, Nmap, Wireshark, Kali Linux, Burp Suite, OSINT, Vulnerability Analysis",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGF2biPdO00Vw/profile-treasury-document-cover-images_800/B4DZnx2y22JMA8-/0/1760699300575?e=1761307200&v=beta&t=SWt0Md19GEWNa61sxirKaWfZznMSD7P3wGparxArxFg"
+      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGF2biPdO00Vw/profile-treasury-document-cover-images_800/B4DZnx2y22JMA8-/0/1760699300575?e=1761307200&v=beta&t=SWt0Md19GEWNa61sxirKaWfZznMSD7P3wGparxArxFg",
+      bgImage: "https://wallpapercave.com/wp/wp15116909.webp",
     },
     {
       title: "Network Engineer Intern",
       company: "Star Cement Ltd.",
-      duration: "Jul 2025 – Aug 2025 · 2 mos",
+      duration: "Jul 2025 · 1 mos",
       location: "Meghalaya, India · On-site",
       skills: "Networking, Cisco Networking, VLANs, Packet Tracer, Troubleshooting",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D22AQEe_XGG_RWY9w/feedshare-shrink_800/B4DZhm3xA3HsAg-/0/1754072555715?e=1762387200&v=beta&t=DG2nOWkbO_WInaVVKhNDuGgLLKqEnrCsEVD1COTywH0"
+      certificate: "https://media.licdn.com/dms/image/v2/D4D22AQEe_XGG_RWY9w/feedshare-shrink_800/B4DZhm3xA3HsAg-/0/1754072555715?e=1762387200&v=beta&t=DG2nOWkbO_WInaVVKhNDuGgLLKqEnrCsEVD1COTywH0",
+      bgImage: "https://wallpapercave.com/wp/wp2044767.jpg",
     },
     {
       title: "Cyber Security Intern",
       company: "Academor",
-      duration: "Nov 2023 – Jan 2024 · 3 mos",
+      duration: "Nov 2023 · 1 mos",
       location: "India · Remote",
       skills: "Kali Linux, Vulnerability Scanning, Network Security, Linux Environment",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQHvfVHDB-I3Qw/profile-treasury-document-cover-images_800/B4DZnx3Zr3IAA8-/0/1760699458420?e=1761307200&v=beta&t=tkTBS_2Anm7phC6HAkCaPM81GCmgSxYiulRzW7gqap4"
+      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQHvfVHDB-I3Qw/profile-treasury-document-cover-images_800/B4DZnx3Zr3IAA8-/0/1760699458420?e=1761307200&v=beta&t=tkTBS_2Anm7phC6HAkCaPM81GCmgSxYiulRzW7gqap4",
+      bgImage: "https://wallpapercave.com/wp/wp15361052.jpg",
     },
   ];
 
@@ -394,29 +476,40 @@ function Experience() {
         {experience_list.map((exp, index) => (
           <div
             key={index}
-            className="w-full md:w-11/12 my-2 p-3 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5"
+            className="relative w-full md:w-11/12 my-3 p-4 rounded-lg overflow-hidden border border-gray-50 border-opacity-10 backdrop-blur-md transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-white/10"
           >
-            <div className="flex flex-wrap justify-between items-center">
-              <div className="text-base md:text-lg font-bold">{exp.title}</div>
-              <div className="text-gray-300 text-sm font-light">{exp.duration}</div>
-            </div>
+            
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-10"
+              style={{
+                backgroundImage: `url(${exp.bgImage})`,
+              }}
+            ></div>
 
-            <div className="text-sm text-gray-400 mt-0.5">{exp.company}</div>
-            <div className="text-sm text-gray-400">{exp.location}</div>
+              
+            <div className="relative z-10">
+              <div className="flex flex-wrap justify-between items-center">
+                <div className="text-base md:text-lg font-bold text-white drop-shadow-md">{exp.title}</div>
+                <div className="text-gray-300 text-sm font-light">{exp.duration}</div>
+              </div>
 
-            <div className="text-sm text-gray-100 mt-2 leading-snug">
-              {exp.skills}
-            </div>
+              <div className="text-sm text-gray-400 mt-0.5">{exp.company}</div>
+              <div className="text-sm text-gray-400">{exp.location}</div>
 
-            <div className="mt-3">
-              <a
-                href={exp.certificate}
-                target="_blank"
-                rel="noreferrer"
-                className="block w-max px-3 py-1 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium hover:bg-white/10 hover:text-white transition-all duration-200"
-              >
-                View Certificate
-              </a>
+              <div className="text-sm text-gray-100 mt-2 leading-snug">
+                {exp.skills}
+              </div>
+
+              <div className="mt-3">
+                <a
+                  href={exp.certificate}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block w-max px-3 py-1 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium hover:bg-white/10 hover:text-white transition-all duration-200"
+                >
+                  View Certificate
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -424,6 +517,7 @@ function Experience() {
     </>
   );
 }
+
 
 
 
@@ -437,7 +531,8 @@ function Projects() {
       description: [
         "Personal portfolio website of theme Ubuntu 20.04, made using NEXT.js & Tailwind CSS",
       ],
-      domains: ["javascript", "next.js", "tailwindcss"]
+      domains: ["javascript", "next.js", "tailwindcss"],
+      image: "images/logos/ubuntu.png",
     },
     {
       name: "Audiovate",
@@ -447,7 +542,8 @@ function Projects() {
       description: [
         "Converts long PDF documents into audiobooks so you can listen instead of read — great for students and professionals who learn on the go.",
       ],
-      domains: ["typescript", "javascript"]
+      domains: ["typescript", "javascript"],
+      image: "https://wallpapercave.com/uwp/uwp4504049.jpeg",
     },
     {
       name: "CrackClock",
@@ -457,7 +553,8 @@ function Projects() {
       description: [
         "Checks password strength and estimates how long it would take to crack a given password, with clear feedback and attack-type breakdown."
       ],
-      domains: ["typescript", "javascript"]
+      domains: ["typescript", "javascript"],
+      image: "https://wallpapercave.com/wp/wp10328415.jpg",
     },
     {
       name: "ImageHunt",
@@ -467,7 +564,8 @@ function Projects() {
       description: [
         "Developed a responsive web app that allows users to search for images using a public API (e.g., Unsplash API), displaying results dynamically with real-time tracking of user queries and seamless UI design."
       ],
-      domains: ["javascript", "api", "frontend"]
+      domains: ["javascript", "api", "frontend"],
+      image: "images/logos/imagehunt.png",
     },
     {
       name: "SGrade",
@@ -476,7 +574,8 @@ function Projects() {
       description: [
         "Built a full-stack web app using HTML, CSS, JavaScript, Node.js and a database, featuring secure login, a teacher dashboard to manage grades, and a student portal to view them."
       ],
-      domains: ["javascript", "node.js", "database", "fullstack"]
+      domains: ["javascript", "node.js", "database", "fullstack"],
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1920&q=80",
     }
   ];
 
@@ -502,55 +601,75 @@ function Projects() {
         </div>
       </div>
 
-      {
-        project_list.map((project, index) => {
-          return (
-            <a key={index} href={project.link} target="_blank" rel="noreferrer" className="flex w-full flex-col px-4">
-              <div className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
-                <div className="flex flex-wrap justify-between items-center">
-                  <div className='flex justify-center items-center'>
-                    <div className="text-base md:text-lg mr-2">{project.name}</div>
-                  </div>
-                  <div className="text-gray-300 font-light text-sm">{project.date}</div>
-                </div>
-                <ul className="tracking-normal leading-tight text-sm font-light ml-4 mt-1">
-                  {
-                    project.description.map((desc, i) => {
-                      return <li key={i} className="list-disc mt-1 text-gray-100">{desc}</li>;
-                    })
-                  }
-                </ul>
-                <div className="flex flex-wrap items-start justify-start text-xs py-2">
-                  {
-                    (project.domains ?
-                      project.domains.map((domain, i) => {
-                        return <span key={i} className={`px-1.5 py-0.5 w-max border border-${tag_colors[domain]} text-${tag_colors[domain]} m-1 rounded-full`}>{domain}</span>
-                      })
-                      : null)
-                  }
-                </div>
-                {project.live && (
-                  <div className="mt-3">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block w-full text-center px-3 py-2 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium 
-                 hover:bg-white/10 hover:text-white transition-all duration-200"
-                    >
-                      LIVE
-                    </a>
-                  </div>
-                )}
+      {project_list.map((project, index) => (
+        <a
+          key={index}
+          href={project.link}
+          target="_blank"
+          rel="noreferrer"
+          className="flex w-full flex-col px-4 relative group"
+        >
+          
+          <div
+            className="absolute inset-0 opacity-3 group-hover:opacity-25 transition-opacity duration-500 rounded-lg bg-cover bg-center"
+            style={{ backgroundImage: `url(${project.image})` }}
+          ></div>
 
+          
+          <div className="relative w-full py-3 px-4 my-3 border border-gray-50 border-opacity-10 rounded-lg 
+                          backdrop-blur-md bg-black/30 transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-lg group-hover:shadow-gray-800/40">
+            
+            <div className="flex flex-wrap justify-between items-center">
+              <div className="flex justify-center items-center">
+                <div className="text-base md:text-lg mr-2 font-semibold text-white group-hover:text-blue-300 transition-all duration-300">
+                  {project.name}
+                </div>
               </div>
-            </a>
-          )
-        })
-      }
+              <div className="text-gray-300 font-light text-sm">{project.date}</div>
+            </div>
+
+            <ul className="tracking-normal leading-tight text-sm font-light ml-4 mt-2">
+              {project.description.map((desc, i) => (
+                <li key={i} className="list-disc mt-1 text-gray-100">
+                  {desc}
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-wrap items-start justify-start text-xs py-2">
+              {project.domains &&
+                project.domains.map((domain, i) => (
+                  <span
+                    key={i}
+                    className={`px-1.5 py-0.5 w-max border border-${tag_colors[domain]} text-${tag_colors[domain]} 
+                    m-1 rounded-full bg-${tag_colors[domain]}/10`}
+                  >
+                    {domain}
+                  </span>
+                ))}
+            </div>
+
+            {project.live && (
+              <div className="mt-3">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block w-full text-center px-3 py-2 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium 
+                            hover:bg-white/20 hover:text-white transition-all duration-300"
+                >
+                  LIVE
+                </a>
+              </div>
+            )}
+          </div>
+        </a>
+      ))}
     </>
-  )
+  );
 }
+
+
 
 
 function Resume() {
