@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const CELL_SIZE = 20;
-const SPEED = 120; // lower = faster
+const SPEED = 120;
 
 export default function SnakeGame() {
   const canvasRef = useRef(null);
@@ -13,12 +13,28 @@ export default function SnakeGame() {
   const [direction, setDirection] = useState("RIGHT");
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const highestScore = 69; // hardcoded top score
+  const [isMobile, setIsMobile] = useState(false);
+  const highestScore = 69;
 
   const rows = Math.floor(window.innerHeight / CELL_SIZE / 1.5);
   const cols = Math.floor(window.innerWidth / CELL_SIZE / 1.8);
 
-  // handle keyboard controls
+ 
+  useEffect(() => {
+    const checkMobile = () => {
+      const mobile =
+        window.innerWidth < 768 ||
+        /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
+      setIsMobile(mobile);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // keyboard controls
   useEffect(() => {
     const handleKey = (e) => {
       switch (e.key) {
@@ -51,12 +67,11 @@ export default function SnakeGame() {
 
   // game loop
   useEffect(() => {
-    if (gameOver) return;
+    if (gameOver || isMobile) return;
     const interval = setInterval(moveSnake, SPEED);
     return () => clearInterval(interval);
   });
 
-  // handle snake movement
   const moveSnake = () => {
     const newSnake = [...snake];
     const head = { ...newSnake[0] };
@@ -66,7 +81,7 @@ export default function SnakeGame() {
     if (direction === "LEFT") head.x -= 1;
     if (direction === "RIGHT") head.x += 1;
 
-    // check collision
+    // collision detection
     if (
       head.x < 0 ||
       head.y < 0 ||
@@ -110,14 +125,19 @@ export default function SnakeGame() {
     setGameOver(false);
   };
 
-  // render canvas
+  // render canvas safely
   useEffect(() => {
+    if (isMobile) return;
+
     const canvas = canvasRef.current;
+    if (!canvas) return; // ✅ safeguard
     const ctx = canvas.getContext("2d");
+    if (!ctx) return; // ✅ safeguard
+
     ctx.fillStyle = "#0d1117";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // draw snake with smooth style
+    // draw snake
     snake.forEach((part, i) => {
       const gradient = ctx.createLinearGradient(
         part.x * CELL_SIZE,
@@ -142,7 +162,7 @@ export default function SnakeGame() {
       ctx.fill();
     });
 
-   
+    // draw food
     ctx.fillStyle = "#f85149";
     ctx.shadowBlur = 0;
     ctx.beginPath();
@@ -154,19 +174,39 @@ export default function SnakeGame() {
       2 * Math.PI
     );
     ctx.fill();
-  }, [snake, food]);
+  }, [snake, food, isMobile]);
 
+  // show Beta message on mobile
+  if (isMobile) {
+    return (
+      <div className="flex flex-col items-center justify-center w-full h-screen bg-[#0d1117] text-white font-mono px-6 text-center">
+        <h1 className="text-2xl font-bold text-[#58a6ff] mb-3 animate-pulse">
+          🐍 Snake Game (Beta)
+        </h1>
+        <p className="text-gray-300 mb-3">
+          This version is currently in{" "}
+          <span className="text-yellow-400 font-semibold">Beta</span>.
+        </p>
+        <p className="text-red-400 font-semibold mb-2">
+          Mobile play is not supported yet.
+        </p>
+        <p className="text-gray-400 text-sm">
+          Please try again on a larger screen or desktop device.
+        </p>
+      </div>
+    );
+  }
+
+  // desktop / pc version
   return (
     <div className="flex flex-col items-center justify-center w-full h-full bg-[#0d1117] text-white font-mono">
       <h2 className="text-xl font-bold tracking-wider text-[#58a6ff] mb-1">
         🐍 SNAKE GAME
       </h2>
       <div className="flex items-center justify-center gap-6 mb-3 text-sm">
-  <p className="text-yellow-400">Highest Score: {highestScore}</p>
-  <p className="text-gray-400">Score: {score}</p>
-</div>
-
-      
+        <p className="text-yellow-400">Highest Score: {highestScore}</p>
+        <p className="text-gray-400">Score: {score}</p>
+      </div>
 
       {gameOver ? (
         <div className="text-center mt-8">
@@ -188,7 +228,7 @@ export default function SnakeGame() {
       )}
 
       <div className="mt-3 text-xs text-gray-500">
-        Controls: ↑ ↓ ← → / WASD | Tap to focus on mobile
+        Controls: ↑ ↓ ← → / WASD
       </div>
     </div>
   );
