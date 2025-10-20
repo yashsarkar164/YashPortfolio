@@ -20,6 +20,7 @@ export class AboutYash extends Component {
       "skills": <Skills />,
       "experience": <Experience/>,
       "projects": <Projects />,
+      "machines": <Machines />,
       "resume": <Resume />,
     }
 
@@ -80,6 +81,10 @@ export class AboutYash extends Component {
           <img className=" w-3 md:w-4" alt="yash' projects" src="./themes/Yaru/status/projects.svg" />
           <span className=" ml-1 md:ml-2 text-gray-50 ">Projects</span>
         </div>
+        <div id="machines" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "machines" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
+          <img className=" w-3 md:w-4" alt="yash' machines" src="./themes/Yaru/status/machines.svg" />
+          <span className=" ml-1 md:ml-2 text-gray-50 ">Machines</span>
+        </div>
         <div id="resume" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "resume" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
           <img className=" w-3 md:w-4" alt="yash's resume" src="./themes/Yaru/status/download.svg" />
           <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
@@ -123,8 +128,8 @@ function About() {
       {/* Bitmoji Section */}
       <div className="relative flex justify-center items-center my-6 md:my-10">
         <div className="relative group">
-          <div className="absolute -inset-2 bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 rounded-full blur opacity-40 group-hover:opacity-70 transition-all duration-500"></div>
-          <div className="relative w-24 md:w-32 rounded-full overflow-hidden border border-white/10 shadow-lg shadow-black/30 hover:scale-105 transition-transform duration-500 ease-out">
+          <div className="absolute -inset-3 bg-gradient-to-tr from-fuchsia-500 via-purple-600 to-blue-500 rounded-full blur-xl opacity-30 group-hover:opacity-70 transition-all duration-700"></div>
+          <div className="relative w-28 md:w-36 rounded-full overflow-hidden border border-white/20 shadow-lg shadow-fuchsia-500/30 hover:scale-110 transition-transform duration-700 ease-out">
             <img
               className="w-full"
               src="./images/logos/bitmoji.png"
@@ -137,29 +142,25 @@ function About() {
       {/* Intro Text */}
       <div className="mt-4 md:mt-6 text-lg md:text-2xl text-center leading-snug tracking-tight">
         <div>
-          my name is{" "}
-          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-300">
+          hey there, i'm{" "}
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-orange-300 drop-shadow-md">
             Yash Sarkar
           </span>
         </div>
-        <div className="font-normal mt-1">
-          I'm a{" "}
+        <div className="font-normal mt-1 text-gray-200">
+          a{" "}
           <span className="text-pink-500 font-semibold">
             Computer Science Student
           </span>{" "}
           & Cyber Security Enthusiast.
         </div>
       </div>
-
-      {/* Divider */}
       <div className="mt-6 md:my-10 relative pt-px bg-gradient-to-r from-pink-400 via-white to-blue-400 w-36 md:w-56 mx-auto rounded-full">
         <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
         <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
       </div>
-
-      {/* Description Box */}
-      <div className="relative mt-6 md:mt-10 w-11/12 md:w-3/4 mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5 md:p-8 shadow-lg shadow-black/10 hover:shadow-white/10 transition-all duration-500 ease-out hover:scale-[1.02]">
-        <ul className="leading-relaxed tracking-tight text-sm md:text-base text-gray-200 space-y-5">
+      <div className="relative mt-6 md:mt-10 w-11/12 md:w-3/4 mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 shadow-lg shadow-black/10 hover:shadow-pink-500/10 transition-all duration-700 ease-out hover:scale-[1.03]">
+        <ul className="leading-relaxed tracking-tight text-sm md:text-base text-gray-200 space-y-6">
           <li>
             <span className="text-pink-400">💻</span>{" "}
             I'm a <span className="font-medium">B.Tech student</span> in{" "}
@@ -191,7 +192,7 @@ function About() {
 
           <li>
             <span className="text-blue-400">🎮</span>{" "}
-            When I'm not coding or solving machines, you’ll find me reading,
+            When I'm not coding or solving machines, you’ll find me reading books,
             playing third-person games, or watching{" "}
             <a
               href="https://www.youtube.com/@Sidemen"
@@ -211,11 +212,22 @@ function About() {
             <span className="text-blue-300 font-medium">Networking</span>, and
             exploring cool open-source tools. 
           </li>
+
+          <li>
+            <span className="text-red-500">🏎️</span>{" "}
+            Oh, and I’m a massive{" "}
+            <span className="text-red-400 font-semibold">Max Verstappen</span>{" "}
+            -fan and the thrill of Formula 1. Let's just say...{" "}
+            <span className="italic text-orange-300">
+              "SIMPLY LOVELY"
+            </span>
+          </li>
         </ul>
       </div>
     </>
   );
 }
+
 
 
 function Education() {
@@ -571,6 +583,7 @@ function Projects() {
       name: "SGrade",
       date: "Nov 2024",
       link: "https://github.com/yashsarkar164/SGrade",
+      live: "https://yashsarkar164.github.io/SGrade/",
       description: [
         "Built a full-stack web app using HTML, CSS, JavaScript, Node.js and a database, featuring secure login, a teacher dashboard to manage grades, and a student portal to view them."
       ],
@@ -609,16 +622,14 @@ function Projects() {
           rel="noreferrer"
           className="flex w-full flex-col px-4 relative group"
         >
-          
           <div
             className="absolute inset-0 opacity-3 group-hover:opacity-25 transition-opacity duration-500 rounded-lg bg-cover bg-center"
             style={{ backgroundImage: `url(${project.image})` }}
           ></div>
 
-          
           <div className="relative w-full py-3 px-4 my-3 border border-gray-50 border-opacity-10 rounded-lg 
                           backdrop-blur-md bg-black/30 transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-lg group-hover:shadow-gray-800/40">
-            
+
             <div className="flex flex-wrap justify-between items-center">
               <div className="flex justify-center items-center">
                 <div className="text-base md:text-lg mr-2 font-semibold text-white group-hover:text-blue-300 transition-all duration-300">
@@ -649,22 +660,144 @@ function Projects() {
                 ))}
             </div>
 
-            {project.live && (
-              <div className="mt-3">
+            {/* CODE & LIVE buttons */}
+            <div className="mt-3 flex gap-2">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-1 text-center px-3 py-2 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium 
+                            hover:bg-white/20 hover:text-white transition-all duration-300"
+                >
+                  CODE
+                </a>
+              )}
+              {project.live && (
                 <a
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="block w-full text-center px-3 py-2 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium 
+                  className="flex-1 text-center px-3 py-2 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium 
                             hover:bg-white/20 hover:text-white transition-all duration-300"
                 >
                   LIVE
                 </a>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </a>
       ))}
+    </>
+  );
+}
+
+
+function Machines() {
+  const machine_list = [
+    {
+      title: "The Planets: Earth",
+      description:
+        "A space-themed CTF focused on enumeration, privilege escalation, and web exploitation. Required deep reconnaissance and OS-level privilege bypassing.",
+      tools: ["nmap", "dirb", "hydra"],
+      report: "https://www.peteonsoftware.com/index.php/2024/07/22/vulnhub-walkthrough-the-planets-earth/",
+      preview: "https://wallpapercave.com/wp/wp15709388.jpg",
+      link: "https://www.vulnhub.com/entry/the-planets-earth,755/",
+    },
+    {
+      title: "Mr. Robot",
+      description:
+        "Inspired by the TV show, this machine required identifying hidden files, decoding credentials, and achieving root via command injection — total pwn.",
+      tools: ["nikto","Burp Suite", "john", "php-reverse-shell", "privilege escalation"],
+      report: "https://drive.google.com/file/d/1HLZMBYUHVS4OGv5vTrMvqCreqIRMAZsD/view?usp=sharing",
+      preview: "https://wallpapercave.com/wp/wp15116926.webp",
+      link: "https://www.vulnhub.com/entry/mr-robot-1,151/",
+    },
+    {
+      title: "Game of Thrones",
+      description:
+        "A fantasy-styled Linux CTF box full of hidden clues. From dirbusting to exploiting weak sudo configs, every flag uncovered another house’s secret.",
+      tools: ["nmap", "gobuster", "linpeas", "ssh tunneling"],
+      report: "https://k3ramas.blogspot.com/2017/11/game-of-thrones-ctf-1-walkthrough_1.html",
+      preview: "https://wallpapercave.com/wp/wp10411929.jpg",
+      link: "https://www.vulnhub.com/entry/game-of-thrones-ctf-1,201/",
+    },
+    {
+      title: "Web Machine (N7)",
+      description:
+        "A fun and realistic web exploitation challenge focusing on weak PHP authentication, SQL injection, and manual privilege escalation to gain root access.",
+      tools: ["burpsuite", "sqlmap", "nmap"],
+      report: "https://jamarir.hashnode.dev/vulnhub-web-machine-n7",
+      preview: "https://wallpapercave.com/wp/wp11938493.jpg",
+      link: "https://www.vulnhub.com/entry/web-machine-n7,756/",
+    },
+  ];
+
+  return (
+    <>
+      <div className="font-medium relative text-2xl mt-10 md:mt-16 mb-6">
+        Machines (CTFs)
+        <div className="absolute pt-px bg-white mt-px top-full w-full">
+          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 -translate-y-1/2 left-full"></div>
+          <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 -translate-y-1/2 right-full"></div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+        {machine_list.map((machine, index) => (
+          <a
+            key={index}
+            href={machine.link}
+            target="_blank"
+            rel="noreferrer"
+            className="relative rounded-xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md shadow-lg shadow-black/20 hover:scale-[1.03] transition-all duration-500 ease-out group"
+          >
+            <img
+              src={machine.preview}
+              alt={machine.title}
+              className="w-full h-40 object-cover opacity-60 group-hover:opacity-80 transition-all duration-500"
+            />
+
+            <div className="p-4 relative z-10">
+              <div className="text-lg md:text-xl font-semibold text-cyan-300 group-hover:text-orange-300 transition-all duration-300">
+                {machine.title}
+              </div>
+
+              <p className="text-gray-300 text-sm mt-2 leading-relaxed">
+                {machine.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mt-3">
+                {machine.tools.map((tool, i) => (
+                  <span
+                    key={i}
+                    className="bg-cyan-400/10 text-cyan-300 text-xs px-2 py-1 rounded-md border border-cyan-400/20"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-3 mt-4">
+                <a
+                  href={machine.report}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1 border border-gray-50 border-opacity-10 text-white rounded-md text-sm font-medium hover:bg-white/10 transition-all duration-200"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  View Report
+                </a>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <p className="text-gray-400 text-sm text-center mt-10">
+        “Each machine taught me something new — enumeration, persistence, and patience.
+        More machines coming soon...”
+      </p>
     </>
   );
 }
