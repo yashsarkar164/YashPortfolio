@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+Yes boi , i knew someone would be a cheeky bastard
+WELL DONE , the CTF is "MV33: Simply Lovely"
+Dm me , u will get your reward.
 User-agent: *
 Disallow:
