@@ -451,7 +451,7 @@ function Experience() {
       duration: "Jul 2025 – Sep 2025 · 3 mos",
       location: "India · Remote",
       skills: "CTF, Metasploit, Nmap, Wireshark, Kali Linux, Burp Suite, OSINT, Vulnerability Analysis",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQGF2biPdO00Vw/profile-treasury-document-cover-images_800/B4DZnx2y22JMA8-/0/1760699300575?e=1761307200&v=beta&t=SWt0Md19GEWNa61sxirKaWfZznMSD7P3wGparxArxFg",
+      certificate: "https://drive.google.com/file/d/1cv1YuIsjACA447LcaNz19-ZniK_UHgY-/view?usp=drive_link",
       bgImage: "https://wallpapercave.com/wp/wp15116909.webp",
     },
     {
@@ -469,7 +469,7 @@ function Experience() {
       duration: "Nov 2023 · 1 mos",
       location: "India · Remote",
       skills: "Kali Linux, Vulnerability Scanning, Network Security, Linux Environment",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D2DAQHvfVHDB-I3Qw/profile-treasury-document-cover-images_800/B4DZnx3Zr3IAA8-/0/1760699458420?e=1761307200&v=beta&t=tkTBS_2Anm7phC6HAkCaPM81GCmgSxYiulRzW7gqap4",
+      certificate: "https://drive.google.com/file/d/1sZc4goi0I8dRKl-DZnckxc01EocD9Lev/view?usp=drive_link",
       bgImage: "https://wallpapercave.com/wp/wp15361052.jpg",
     },
   ];
