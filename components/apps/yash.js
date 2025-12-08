@@ -451,7 +451,7 @@ function Experience() {
       duration: "Jul 2025 – Sep 2025 · 3 mos",
       location: "India · Remote",
       skills: "CTF, Metasploit, Nmap, Wireshark, Kali Linux, Burp Suite, OSINT, Vulnerability Analysis",
-      certificate: "https://drive.google.com/file/d/1cv1YuIsjACA447LcaNz19-ZniK_UHgY-/view?usp=drive_link",
+      certificate: "https://certification.edufyitechsolutions.com/?id=ETS737",
       bgImage: "https://wallpapercave.com/wp/wp15116909.webp",
     },
     {
@@ -460,7 +460,7 @@ function Experience() {
       duration: "Jul 2025 · 1 mos",
       location: "Meghalaya, India · On-site",
       skills: "Networking, Cisco Networking, VLANs, Packet Tracer, Troubleshooting",
-      certificate: "https://media.licdn.com/dms/image/v2/D4D22AQEe_XGG_RWY9w/feedshare-shrink_800/B4DZhm3xA3HsAg-/0/1754072555715?e=1762387200&v=beta&t=DG2nOWkbO_WInaVVKhNDuGgLLKqEnrCsEVD1COTywH0",
+      certificate: "https://drive.google.com/file/d/1wEgggcn2z-U0kCyiGNYZibpJBmBVQAxN/view?usp=sharing",
       bgImage: "https://wallpapercave.com/wp/wp2044767.jpg",
     },
     {
