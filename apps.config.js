@@ -111,7 +111,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.instagram.com/yash.sarkar__/",
+        url: "instagram.com/yash.sarkar__",
     },
 
     {
