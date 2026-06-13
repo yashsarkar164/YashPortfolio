@@ -42,3 +42,4 @@ jobs:
       #   with:
       #     branch: gh-pages
       #     folder: out
+      # something went wrong with contact me , now its working fine
